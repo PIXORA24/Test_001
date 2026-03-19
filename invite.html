@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600&display=swap" rel="stylesheet">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<title>Nidhishree & Gopi Chand Invitation</title>
+
+<link rel="stylesheet" href="glass.css">
+</head>
+
+<body>
+
+  <!-- Dim Layer (MUST be inside body) -->
+  <div id="navDim"></div>
+
+  <!-- Invite Video -->
+  <div class="invite-frame">
+
+    <div id="overlay">
+      <div class="overlay-copy">
+        <button id="openBtn">Tap to Open</button>
+      </div>
+    </div>
+
+    <video id="video" playsinline muted preload="metadata" loop></video>
+
+  </div>
+
+  <!-- Action Band -->
+  <div class="action-bar">
+    <a id="mapBtn" target="_blank" rel="noopener">Directions</a>
+    <a id="calendarBtn">Add to Calendar</a>
+  </div>
+
+  <a id="studioLink" class="studio-link" target="_blank" rel="noopener" hidden>
+    <span id="studioLinkLabel" class="studio-link__label"></span>
+    <span class="studio-link__pill">
+      <span class="studio-link__row">
+        <svg class="studio-link__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <rect x="3.5" y="3.5" width="17" height="17" rx="5"></rect>
+          <circle cx="12" cy="12" r="4.1"></circle>
+          <circle cx="17.2" cy="6.8" r="1.1"></circle>
+        </svg>
+        <span id="studioLinkName" class="studio-link__name"></span>
+      </span>
+    </span>
+  </a>
+
+  <audio id="audio" preload="auto"></audio>
+
+  <script src="site-config.js"></script>
+  <script src="invite.js"></script>
+
+</body>
+</html>
